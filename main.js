@@ -2,9 +2,12 @@ const p1butt = document.querySelector("#p1butt");
 const p2butt = document.querySelector("#p2butt");
 const p1score = document.querySelector('#p1Score');
 const p2score = document.querySelector('#p2Score');
+const reset = document.querySelector('#reset');
+const select = document.querySelector("select");
 
-let p1count, p2count =0;
-let win=5;
+let p1count = 0;
+let p2count =0;
+let win= select.getAttribute()
 let gameover = false;
 
 p1butt.addEventListener('click', function(){
@@ -26,3 +29,11 @@ p2butt.addEventListener('click', function(){
         p2score.textContent = p2count;  
     }
 });
+
+reset.addEventListener('click', function(){
+    gameover = false;
+    p1count = 0;
+    p2count = 0;
+    p2score.textContent = 0;  
+    p1score.textContent = 0;
+} );
