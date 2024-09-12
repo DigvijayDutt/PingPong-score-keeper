@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+>
 </head>
 <body>
-    <div>
+    <div class="box">
+            <img src="images/table-tennis-1663946837.jpg">
             <h5>Ping Pong score keeper</h5>
             <h3><span id="p1Score">0</span> to <span id="p2Score">0</span></h3>
             <h6>use the buttons below to keep score</h6>
-            <label for="player-select"><b>Playing till:</b></label>
-            <select name="Player-select">
+            <label for="select"><b>Playing till:</b></label>
+            <select name="Player-select" id="select">
                 <option value="11">11</option>
                 <option value="21">21</option>
             </select>
